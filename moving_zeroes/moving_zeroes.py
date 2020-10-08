@@ -4,6 +4,17 @@ Returns: a List of integers
 '''
 def moving_zeroes(arr):
     # Your code here
+    nonzero = []
+    zeroes = []
+    for i in range(0, len(arr)):
+        if arr[i] != 0:
+            nonzero.append(arr[i])  
+        else:
+            zeroes.append(0) 
+    
+    for i in zeroes:
+        nonzero.append(0)
+    return nonzero
 
     pass
 
