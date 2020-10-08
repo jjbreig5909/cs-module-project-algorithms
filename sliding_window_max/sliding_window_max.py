@@ -4,7 +4,11 @@ Returns: a List of integers
 '''
 def sliding_window_max(nums, k):
     # Your code here
-
+    maxvalues = []
+    for i in range(len(nums)-k+1):
+        newarr = nums[i:i+k]
+        maxvalues.append(max(newarr))
+    return maxvalues
     pass
 
 
