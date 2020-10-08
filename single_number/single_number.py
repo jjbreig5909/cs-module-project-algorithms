@@ -4,17 +4,15 @@ Returns: an integer
 '''
 def single_number(arr):
     # Your code here    
-
-        
-
+    for i in range(len(arr)):
+        dupe = False
+        for j in range(len(arr)):
+            if arr[i] == arr[j] and i != j:
+                dupe = True
+        if not dupe:
+            return arr[i]
     
-    
-
-    
-    
-
-
-
+    return -1
 
     pass
 
